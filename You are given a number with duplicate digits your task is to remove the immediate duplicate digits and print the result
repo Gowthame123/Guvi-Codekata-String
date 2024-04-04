@@ -1,0 +1,27 @@
+You are given a number with duplicate digits your task is to remove the immediate duplicate digits and print the result
+
+Input Description:
+You are given a long string of digits
+
+Output Description:
+Print the desired result print -1 if result length is 0
+
+Sample Input :
+1331
+Sample Output :
+11
+
+CODE:
+
+s = input()
+final = ''
+out = ''
+i = 0
+while i < len(s):
+    if i < len(s) - 1 and s[i] == s[i+1]:
+        i += 1
+    else:
+        out += s[i]
+    i += 1
+
+print(out)
